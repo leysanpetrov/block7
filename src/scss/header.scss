@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixins";
+
+.cps__header {
+  background-color: #41F6D7;
+  padding-bottom: 19px;
+  padding-top: 19px;
+
+  & .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .menu {
+      background-color: white;
+      padding: 19px 16px;
+    }
+  }
+}
+
+  .menu__block1 {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+
+    & .ellipse {
+      background: #FF3E79;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+
+    & .ellipse_icon_burger {
+      background-image: url("../img/burger/burger.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    & .menu__border1 {
+      margin: 0 10px;
+    }
+
+    & .menu__logo {
+      margin-right: auto;
+      margin-left: 16px;
+      align-items: center;
+    }
+  }
+
+  .menu__block2 {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
