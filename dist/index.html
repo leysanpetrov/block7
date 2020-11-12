@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> <%= htmlWebpackPlugin.options.title %> </title>
-</head>
+  <title> Webpack 4 Starter </title>
+<link href="style.css" rel="stylesheet"></head>
 <head>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -14,19 +13,19 @@
 <body>
 <div class="cps">
   <header class="header">
-    <div class="container header__container">
-      <div class="header__container-row">
-        <nav class="header__menu">
-          <div class="header__block-left">
+    <div class="container">
+      <div class="header__row">
+        <nav class="header__menu menu">
+          <div class="menu__block1">
             <a href="#">
               <div class="ellipse ellipse_icon_burger"></div>
             </a>
-            <div class="border border__left"></div>
-            <div class="logo logo__menu">
-              <a href="#"><img src="img/Group.svg"/></a>
+            <div class="menu__border1"></div>
+            <div class="menu__logo">
+              <a href="#"><img src="img/Group.svg"></a>
             </div>
           </div>
-          <div class="header__block-right">
+          <div class="menu__block2">
             <a href="#">
               <div class="ellipse ellipse_icon_tel ellipse_display_none"></div>
             </a>
@@ -36,7 +35,7 @@
             <a href="#">
               <div class="ellipse ellipse_icon_profile ellipse_display_none"></div>
             </a>
-            <div class="border border__right"></div>
+            <div class="menu__border"></div>
             <a href="#">
               <div class="ellipse ellipse_icon_repair"></div>
             </a>
@@ -98,11 +97,11 @@
             большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
             и, в свою очередь, советуют нас родным и близким.</p>
           <div class="about__onwards onwards">
-            <button href="#" class="onwards__img"><img src="img/chevron-double-down.svg"/></button>
+            <button href="#" class="onwards__img"><img src="img/chevron-double-down.svg"></button>
             <h3 class="onwards__text">Читать далее</h3>
           </div>
         </div>
-        <div class="about__img"><img src="img/MG_3223.png"/></div>
+        <div class="about__img"><img src="img/MG_3223.png"></div>
       </section>
 
     </div>
@@ -115,7 +114,7 @@
       <div class="block-brands">
         <div class="brands-logo">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-1.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-1.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -128,7 +127,7 @@
         </div>
         <div class="brands-logo">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-3.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-3.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -141,7 +140,7 @@
         </div>
         <div class="brands-logo">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-5.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-5.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -154,7 +153,7 @@
         </div>
         <div class="brands-logo">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-8.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-8.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -167,7 +166,7 @@
         </div>
         <div class="brands-logo">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-2.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-2.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -180,7 +179,7 @@
         </div>
         <div class="brands-logo">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-4.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-4.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -194,7 +193,7 @@
 
         <div class="brands-logo brands-logo_display_none">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-6.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-6.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -207,7 +206,7 @@
         </div>
         <div class="brands-logo brands-logo_display_none">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-7.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-7.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -220,7 +219,7 @@
         </div>
         <div class="brands-logo brands-logo_display_none">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-1.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-1.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -233,7 +232,7 @@
         </div>
         <div class="brands-logo brands-logo_display_none">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-3.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-3.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -246,7 +245,7 @@
         </div>
         <div class="brands-logo brands-logo_display_none">
           <a href="#">
-            <div class="brands-logo__img"><img src="img/Bitmap-5.png"/></div>
+            <div class="brands-logo__img"><img src="img/Bitmap-5.png"></div>
           </a>
           <a href="#">
             <div class="brands-logo__ellipse">
@@ -259,13 +258,13 @@
         </div>
       </div>
       <div class="swiper-container">
-        <!-- Additional required wrapper -->
+        
         <div class="swiper-wrapper">
-          <!-- Slides -->
+          
           <div class="swiper-slide">
             <div class="brands-logo">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-1.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-1.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -280,7 +279,7 @@
           <div class="swiper-slide">
             <div class="brands-logo">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-3.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-3.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -295,7 +294,7 @@
           <div class="swiper-slide">
             <div class="brands-logo">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-5.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-5.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -310,7 +309,7 @@
           <div class="swiper-slide">
             <div class="brands-logo">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-8.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-8.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -325,7 +324,7 @@
           <div class="swiper-slide">
             <div class="brands-logo">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-2.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-2.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -340,7 +339,7 @@
           <div class="swiper-slide">
             <div class="brands-logo">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-4.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-4.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -355,7 +354,7 @@
           <div class="swiper-slide">
             <div class="brands-logo brands-logo_display_none">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-6.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-6.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -370,7 +369,7 @@
           <div class="swiper-slide">
             <div class="brands-logo brands-logo_display_none">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-7.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-7.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -385,7 +384,7 @@
           <div class="swiper-slide">
             <div class="brands-logo brands-logo_display_none">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-1.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-1.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -400,7 +399,7 @@
           <div class="swiper-slide">
             <div class="brands-logo brands-logo_display_none">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-3.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-3.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -415,7 +414,7 @@
           <div class="swiper-slide">
             <div class="brands-logo brands-logo_display_none">
               <a href="#">
-                <div class="brands-logo__img"><img src="img/Bitmap-5.png"/></div>
+                <div class="brands-logo__img"><img src="img/Bitmap-5.png"></div>
               </a>
               <a href="#">
                 <div class="brands-logo__ellipse">
@@ -428,22 +427,22 @@
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
+        
         <div class="swiper-pagination"></div>
 
-        <!--                 If we need navigation buttons-->
-        <!--                        <div class="swiper-button-prev"></div>-->
-        <!--                        <div class="swiper-button-next"></div>-->
+        
+        
+        
 
-        <!-- If we need scrollbar -->
-        <!--                        <div class="swiper-scrollbar"></div>-->
+        
+        
       </div>
       <div class="seeAll">
-        <button href="#" class="seeAll__img"><img src="img/chevron-double-down.svg"/></button>
+        <button href="#" class="seeAll__img"><img src="img/chevron-double-down.svg"></button>
         <h3 class="seeAll__text">Показать все</h3>
       </div>
       <div class="close close_display_none">
-        <button href="#" class="close__img"><img src="img/chevron-double-down.svg"/></button>
+        <button href="#" class="close__img"><img src="img/chevron-double-down.svg"></button>
         <h3 class="close__text">Свернуть</h3>
       </div>
     </div>
@@ -560,17 +559,17 @@
         </div>
       </div>
       <div class="seeAll2">
-        <button href="#" class="seeAll2__img"><img src="img/chevron-double-down.svg"/></button>
+        <button href="#" class="seeAll2__img"><img src="img/chevron-double-down.svg"></button>
         <h3 class="seeAll2__text">Показать все</h3>
       </div>
       <div class="close2 close2_display_none">
-        <button href="#" class="close2__img"><img src="img/chevron-double-down.svg"/></button>
+        <button href="#" class="close2__img"><img src="img/chevron-double-down.svg"></button>
         <h3 class="close2__text">Свернуть</h3>
       </div>
       <div class="swiper-container-2">
-        <!-- Additional required wrapper -->
+        
         <div class="swiper-wrapper">
-          <!-- Slides -->
+          
           <div class="swiper-slide">
             <div class="computer-equipment">
               <a href="#">
@@ -702,9 +701,9 @@
     </div>
     <div class="container">
       <div class="swiper-container-3">
-        <!-- Additional required wrapper -->
+        
         <div class="swiper-wrapper">
-          <!-- Slides -->
+          
 
           <div class="swiper-slide">
             <div class="blocks-of-price">
@@ -722,7 +721,7 @@
                   <div class="block-of-price__value">30-120 мин</div>
                 </div>
                 <div class="buttons">
-                  <input class ="button" type="submit" value="Заказать">
+                  <input class="button" type="submit" value="Заказать">
                   <div class="arrow arrow-connection">
                     <div class="arrow-top"></div>
                     <div class="arrow-bottom"></div>
@@ -794,7 +793,7 @@
             <div class="price-open__content">Бесплатно</div>
             <div class="price-open__content">30мин</div>
             <div class="buttons">
-              <input class ="button" type="submit" value="Заказать">
+              <input class="button" type="submit" value="Заказать">
               <div class="arrow arrow-connection">
                 <div class="arrow-top"></div>
                 <div class="arrow-bottom"></div>
@@ -809,7 +808,7 @@
             <div class="price-open__content">1 000 ₽</div>
             <div class="price-open__content">30-120 мин</div>
             <div class="buttons">
-              <input class ="button" type="submit" value="Заказать">
+              <input class="button" type="submit" value="Заказать">
               <div class="arrow arrow-connection">
                 <div class="arrow-top"></div>
                 <div class="arrow-bottom"></div>
@@ -824,7 +823,7 @@
             <div class="price-open__content">1 000 ₽</div>
             <div class="price-open__content">30-120 мин</div>
             <div class="buttons">
-              <input class ="button" type="submit" value="Заказать">
+              <input class="button" type="submit" value="Заказать">
               <div class="arrow arrow-connection">
                 <div class="arrow-top"></div>
                 <div class="arrow-bottom"></div>
@@ -839,7 +838,7 @@
             <div class="price-open__content">1 000 ₽</div>
             <div class="price-open__content">30-120 мин</div>
             <div class="buttons">
-              <input class ="button" type="submit" value="Заказать">
+              <input class="button" type="submit" value="Заказать">
               <div class="arrow arrow-connection">
                 <div class="arrow-top"></div>
                 <div class="arrow-bottom"></div>
@@ -854,7 +853,7 @@
             <div class="price-open__content">1 000 ₽</div>
             <div class="price-open__content">30-120 мин</div>
             <div class="buttons">
-              <input class ="button" type="submit" value="Заказать">
+              <input class="button" type="submit" value="Заказать">
               <div class="arrow arrow-connection">
                 <div class="arrow-top"></div>
                 <div class="arrow-bottom"></div>
@@ -886,6 +885,6 @@
     </div>
   </footer>
 </div>
-</body>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
 
