@@ -1,0 +1,23 @@
+.border-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__text {
+    display: block;
+  }
+
+  &__border-for-title {
+    @media (min-width: 767px) {
+      position: relative;
+      left: -8px;
+      right: -8px;
+    }
+
+    @media (min-width: 1120px) {
+      position: relative;
+      left: -16px;
+      right: -16px;
+    }
+  }
+}

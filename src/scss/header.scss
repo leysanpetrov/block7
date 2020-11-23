@@ -2,23 +2,23 @@
 @import "mixins";
 
 .header {
-  padding-bottom: 19px;
-  padding-top: 19px;
+  //padding-bottom: 19px;
+  //padding-top: 19px;
   background-color: white;
 
-  & .header__container {
-    min-width: 280px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  & .header__container-row {
+  //&__container {
+  //  min-width: 280px;
+  //  margin: 0 auto;
+  //  padding-left: 16px;
+  //  padding-right: 16px;
+  //}
+  &__container-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  & .header__menu {
+  &__row {
     width: 100%;
     background-color: white;
     padding: 19px 16px;
@@ -27,7 +27,7 @@
     align-items: center;
   }
 
-  & .header__block-left {
+  &__block-left {
     display: flex;
     width: 50%;
     justify-content: space-between;
@@ -38,13 +38,13 @@
     }
   }
 
-  & .header__block-right {
+  &__block-right {
     display: flex;
     width: 50%;
     justify-content: space-between;
   }
 
-  @media (min-width:1120px) {
+  @media (min-width:1440px) {
       display: none;
   }
 }
@@ -76,14 +76,14 @@
   }
 }
 
-.logo__menu {
+.logo__row {
   margin-right: auto;
   margin-left: 16px;
   align-items: center;
 }
 
  .ellipse {
-  background: #FF3E79;
+  background: #FF3E79 no-repeat center;
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -91,43 +91,29 @@
 
  .ellipse_icon_burger {
   background-image: url("../img/burger/burger.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
  .ellipse_icon_tel {
   background-image: url("../img/tel/tel.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
  .ellipse_icon_chat {
   background-image: url("../img/chat/chat.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
  .ellipse_icon_profile {
   background-image: url("../img/profile/profile.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .ellipse_icon_repair {
   background-image: url("../img/repair/repair.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .ellipse_icon_search {
   background-image: url("../img/search/search.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .ellipse_icon_close {
   background-image: url("../img/close/close.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
