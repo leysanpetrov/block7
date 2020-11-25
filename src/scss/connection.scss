@@ -1,0 +1,96 @@
+.connection {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 320px;
+  background-color: white;
+
+  @media (min-width: 767px) {
+    width: 440px;
+
+  }
+
+  &__border-title {
+    padding-top: 28px;
+  }
+
+  &__border-text-connect_none {
+    display: none;
+  }
+
+  &__border-text-call_none {
+    display: none;
+  }
+
+  &__icon_close {
+    padding-top: 24px;
+    margin-left: 16px;
+  }
+
+  &__icon_close_left {
+    @media (min-width: 767px) {
+      position: absolute;
+      padding-top: 28px;
+      left: -80px;
+    }
+  }
+
+  &__input-form {
+    width: 272px;
+    margin: 8px 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    color: #B5B6BC;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 16px;
+
+    @media (min-width: 767px) {
+      width: 375px;
+    }
+  }
+
+
+  &__exclude_none {
+    display: none;
+  }
+
+  &__text {
+    margin: 8px 16px 0 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82;
+  }
+
+  a {
+    color: red;
+  }
+
+  &__button {
+    text-align: right;
+    margin-right: 16px;
+    margin-top: 23px;
+    /*padding-bottom: 75px;*/
+  }
+
+  &__top,
+  &__bottom {
+    background: white;
+  }
+
+  &__arrow {
+    position: relative;
+    left: 277px;
+    bottom: 18px;
+  }
+}
+
+.connection_block {
+  display: block;
+}
+
+.connection_shadow {
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+
