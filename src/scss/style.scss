@@ -62,7 +62,7 @@ body {
 
 
 .menu-wrapper {
-  @media (min-width: 360px ) and (max-width: 1440px) {
+  @media (min-width: 360px) and (max-width: 1440px) {
     position: static;
     z-index: 2;
   }
@@ -70,9 +70,25 @@ body {
 
 .connection-wrapper {
   @media (min-width: 360px) {
-    position: absolute;
+    //position: absolute;
     z-index: 3;
     justify-content: flex-end;
+  }
+
+  &__connect {
+    display: none;
+  }
+
+  &__call {
+    display: none;
+  }
+
+  &__call_block {
+    display: block;
+  }
+
+  &__connect_block {
+    display: block;
   }
 }
 
@@ -98,9 +114,9 @@ body {
   width: 100%;
   height: 1px;
 
-  @media (min-width:1440px) {
-      display: none;
-    }
+  @media (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .border-for-title {
@@ -150,4 +166,12 @@ textarea {
   @media (min-width: 767px) {
     width: 375px;
   }
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0;
 }

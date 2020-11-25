@@ -27,27 +27,23 @@ closeMenu.addEventListener('click', function () {
 
 let chat = document.querySelectorAll('.ellipse_icon_chat');
 let call = document.querySelectorAll('.ellipse_icon_tel');
-let closeConnect = document.querySelector('.connection__icon_close');
-let connection = document.querySelector('.connection');
-let inputFormNone = document.querySelectorAll('.connection__exclude');
-let titleNoneConnect = document.querySelector('.connection__border-text-connect');
-let titleNoneCall = document.querySelector('.connection__border-text-call');
+let closeConnect = document.querySelectorAll('.connection__icon_close');
+let connectionConnect = document.querySelector('.connection-wrapper__connect');
+let connectionCall = document.querySelector('.connection-wrapper__call');
 
 for(let i = 0; i < chat.length; i++) {
   chat[i].addEventListener('click', function () {
 
     if (window.innerWidth >= 360) {
       mainProjectNone.classList.add('main-of-project_opacity');
-      connection.classList.add('connection_block');
-      connection.classList.add('connection_shadow');
+      connectionConnect.classList.add('connection-wrapper__connect_block');
+      connectionConnect.classList.add('connection_shadow');
       menu.classList.add('menu_opacity');
-      titleNoneConnect.classList.remove('connection__border-text-connect_none');
 
     } else {
       mainProjectNone.classList.add('main-of-project_none');
-      connection.classList.add('connection_block');
+      connectionConnect.classList.add('connection-wrapper__connect_block');
       menu.classList.remove('menu_flex');
-      titleNoneConnect.classList.remove('connection__border-text-connect_none');
     }
   })
 }
@@ -58,45 +54,33 @@ for(let i = 0; i < call.length; i++) {
     console.log('call')
     if (window.innerWidth >= 360) {
       mainProjectNone.classList.add('main-of-project_opacity');
-      connection.classList.add('connection_block');
-      connection.classList.add('connection_shadow');
+      connectionCall.classList.add('connection-wrapper__call_block');
+      connectionCall.classList.add('connection_shadow');
       menu.classList.add('menu_opacity');
-
-      titleNoneCall.classList.remove('connection__border-text-call_none');
-
-      for(let i = 0; i < inputFormNone.length; i++) {
-        inputFormNone[i].classList.add('connection__exclude_none');
-      }
 
 
     } else {
       mainProjectNone.classList.add('main-of-project_none');
-      connection.classList.add('connection_block');
+      connectionCall.classList.add('connection-wrapper__call_block');
       menu.classList.remove('menu_flex');
-      titleNoneCall.classList.remove('connection__border-text-call_none');
-      for(let i = 0; i < inputFormNone.length; i++) {
-        inputFormNone[i].classList.add('connection__exclude_none');
-      }
     }
   })
 }
 
-closeConnect.addEventListener('click', function () {
-  console.log('close')
-  mainProjectNone.classList.remove('main-of-project_opacity');
-  mainProjectNone.classList.remove('main-of-project_none');
-  connection.classList.remove('connection_block');
-  connection.classList.remove('connection_shadow');
-  menu.classList.remove('menu_flex');
-  menu.classList.remove('menu_opacity');
-  titleNoneConnect.classList.add('connection__border-text-connect_none');
-  titleNoneCall.classList.add('connection__border-text-call_none');
 
-
-  for(let i = 0; i < inputFormNone.length; i++) {
-    inputFormNone[i].classList.remove('connection__exclude_none');
+  for(let i = 0; i < closeConnect.length; i++) {
+    closeConnect[i].addEventListener('click', function () {
+      mainProjectNone.classList.remove('main-of-project_opacity');
+      mainProjectNone.classList.remove('main-of-project_none');
+      connectionConnect.classList.remove('connection-wrapper__connect_block');
+      connectionConnect.classList.remove('connection-wrapper__connect_shadow');
+      connectionCall.classList.remove('connection-wrapper__call_block');
+      connectionCall.classList.remove('connection-wrapper__call_shadow');
+      menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_opacity');
+    })
   }
-})
+
 
 
 
