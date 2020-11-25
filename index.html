@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Webpack 4 Starter </title>
+<link href="style.css" rel="stylesheet"></head>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+</head>
+<body>
+<div class="cps">
+    <div class="menu-wrapper">
+        <div class="menu">
+            <div class="menu__header">
+                <nav class="menu__nav">
+                    <div class="menu__block-left">
+                        <a href="#" class="menu__ellipse menu__ellipse_display_none">
+                            <div class="ellipse ellipse_icon_close"></div>
+                        </a>
+                        <div class="logo menu__logo">
+                            <a href="#"><img src="img/Group.svg"></a>
+                        </div>
+                    </div>
+                    <div class="menu__block-right">
+                        <a href="#">
+                            <div class="ellipse ellipse_icon_search menu__ellipse menu__ellipse_icon_search"></div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <ul class="menu__items">
+                <a href="#">
+                    <li class="menu__item menu__item_active">Ремонт техники</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Услуги и сервисы</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Корпоративным клиентам</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Продавцам техники</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Партнерам</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Производителям</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Наши сервисные центры</li>
+                </a>
+                <a href="#">
+                    <li class="menu__item">Контакты</li>
+                </a>
+            </ul>
+            <div class="menu__footer">
+                <div class="menu__contact-block">
+                    <div class="menu__contacts">
+                        <a href="#">
+                            <div class="ellipse ellipse_icon_tel"></div>
+                        </a>
+                        <a href="#">
+                            <div class="ellipse ellipse_icon_chat"></div>
+                        </a>
+                        <a href="#">
+                            <div class="ellipse ellipse_icon_profile"></div>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <div class="menu__mail">mail@cps.com</div>
+                    </a>
+                    <a href="#">
+                        <div class="menu__phone">8 800 890 8900</div>
+                    </a>
+                </div>
+                <div class="menu__languages">
+                    <a href="#">
+                        <div class="menu__language menu__language_ru_active">RU</div>
+                    </a>
+                    <a href="#">
+                        <div class="menu__language">EN</div>
+                    </a>
+                    <a href="#">
+                        <div class="menu__language">CH</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-of-project">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__container-row">
+                    <nav class="header__row">
+                        <div class="header__block-left">
+                            <a href="#">
+                                <div class="ellipse ellipse_icon_burger"></div>
+                            </a>
+                            <div class="border border__left"></div>
+                            <div class="logo logo__row">
+                                <a href="#"><img src="img/Group.svg"></a>
+                            </div>
+                        </div>
+                        <div class="header__block-right">
+                            <a href="#">
+                                <div class="ellipse ellipse_icon_tel ellipse_display_none"></div>
+                            </a>
+                            <a href="#">
+                                <div class="ellipse ellipse_icon_chat ellipse_display_none"></div>
+                            </a>
+                            <a href="#">
+                                <div class="ellipse ellipse_icon_profile ellipse_display_none"></div>
+                            </a>
+                            <div class="border border__right"></div>
+                            <a href="#">
+                                <div class="ellipse ellipse_icon_repair"></div>
+                            </a>
+                            <a href="#">
+                                <div class="ellipse ellipse_icon_search"></div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="border-row"></div>
+        <main class="main">
+            <div class="container">
+                <div class="main__title-menu">
+                    <div class="border-title">
+                        <div class="border-for-title border-title__border-for-title"></div>
+                        <h1 class="border-title__text">Услуги и сервисы</h1>
+                    </div>
+                    <div class="main__icons">
+                        <div class="main__icons-item">
+                            <p>Оставить заявку</p>
+                            <div>
+                                <a href="#">
+                                    <div class="ellipse ellipse_icon_repair"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__icons-item">
+                            <p>Статус ремонта</p>
+                            <div>
+                                <a href="#">
+                                    <div class="ellipse ellipse_icon_search"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__row-services">
+                    <div class="main__service">Ремонтируемые бренды</div>
+                    <div class="main__service">Ремонтируемые устройства</div>
+                    <div class="main__service">Цены на услуги</div>
+                    <div class="main__service">Адреса сервисных центров</div>
+                    <div class="main__service">Специальные цены</div>
+                </div>
+                <section class="main__about">
+                    <div class="main__text">
+                        <p class="main__text1">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                            производителя.</p>
+                        <p class="main__text2">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у
+                            нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                        <p class="main__text3">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у
+                            нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                            большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                            рекомендациям
+                            и, в свою очередь, советуют нас родным и близким.</p>
+                        <div class="uncover">
+                            <button href="#" class="uncover__img"><img src="img/chevron-double-down.svg"></button>
+                            <h3 class="uncover__title">Читать далее</h3>
+                        </div>
+                    </div>
+                    <div class="main__img"><img src="img/MG_3223.png"></div>
+                </section>
+
+            </div>
+        </main>
+        <section>
+            <div class="container section-title">
+                <h2>Ремонт техники различных брендов</h2>
+            </div>
+            <div class="container">
+                <div class="brands">
+                    <a href="#">
+                        <div class="brands__logo">
+                            <div class="brands__img"><img src="img/Bitmap-1.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo">
+                            <div class="brands__img"><img src="img/Bitmap-3.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo">
+                            <div class="brands__img"><img src="img/Bitmap-5.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo">
+                            <div class="brands__img"><img src="img/Bitmap-8.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo">
+                            <div class="brands__img"><img src="img/Bitmap-2.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo">
+                            <div class="brands__img"><img src="img/Bitmap-4.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo brands__logo_display_none">
+                            <div class="brands__img"><img src="img/Bitmap-6.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo brands__logo_display_none">
+                            <div class="brands__img"><img src="img/Bitmap-7.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo brands__logo_display_none">
+                            <div class="brands__img"><img src="img/Bitmap-1.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo brands__logo_display_none">
+                            <div class="brands__img"><img src="img/Bitmap-3.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="brands__logo brands__logo_display_none">
+                            <div class="brands__img"><img src="img/Bitmap-5.png"></div>
+                            <div class="brands__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-container">
+                    
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide brands">
+                            <div class="brands__logo">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-1.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide brands">
+                            <div class="brands__logo">
+                                <a href="#">
+                                    <div class="brands-__img"><img src="img/Bitmap-3.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide brands">
+                            <div class="brands__logo">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-5.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide brands">
+                            <div class="brands__logo">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-8.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-2.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-4.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo brands__logo_display_none">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-6.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo brands__logo_display_none">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-7.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo brands__logo_display_none">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-1.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo brands__logo_display_none">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-3.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brands__logo brands__logo_display_none">
+                                <a href="#">
+                                    <div class="brands__img"><img src="img/Bitmap-5.png"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="brands__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+
+                    
+                    
+                    
+
+                    
+                    
+                </div>
+                <div class="see-close">
+                    <div class="see-close__seeAll">
+                        <button href="#" class="see-close__img"><img src="img/chevron-double-down.svg"></button>
+                        <h3 class="see-close__text">Показать все</h3>
+                    </div>
+                    <div class="see-close__close see-close__close_display_none">
+                        <button href="#" class="see-close__img see-close__img_up"><img src="img/chevron-double-down.svg"></button>
+                        <h3 class="see-close__text">Свернуть</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container section-title">
+                <h2>Ремонт техники различных техники</h2>
+            </div>
+            <div class="container">
+                <div class="equipments">
+                    <a href="#">
+                        <div class="equipments__item">
+                            <div class="equipments__title">Ремонт ноутбуков</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item">
+                            <div class="equipments__title">Ремонт планшетов</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item">
+                            <div class="equipments__title">Ремонт ПК</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item equipments__item_display_none">
+                            <div class="equipments__title">Ремонт мониторов</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item equipments__item_display_none">
+                            <div class="equipments__title">Ремонт ноутбуков</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item equipments__item_display_none">
+                            <div class="equipments__title">Ремонт планшетов</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item equipments__item_display_none">
+                            <div class="equipments__title">Ремонт ПК</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="equipments__item equipments__item_display_none">
+                            <div class="equipments__title">Ремонт мониторов</div>
+                            <div class="equipments__ellipse ellipse-arrow">
+                                <div class="arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="see-close">
+                    <div class="see-close__seeAll2">
+                        <button href="#" class="see-close__img"><img src="img/chevron-double-down.svg"></button>
+                        <h3 class="see-close__text">Показать все</h3>
+                    </div>
+                    <div class="see-close__close2 see-close__close2_display_none">
+                        <button href="#" class="see-close__img see-close__img_up"><img src="img/chevron-double-down.svg"></button>
+                        <h3 class="see-close__text">Свернуть</h3>
+                    </div>
+                </div>
+                <div class="swiper-container-2">
+                    
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт ноутбуков</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт планшетов</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт ПК</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт мониторов</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт ноутбуков</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт планшетов</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт ПК</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="equipments__item">
+                                    <div class="equipments__title">Ремонт мониторов</div>
+                                    <div class="equipments__ellipse ellipse-arrow">
+                                        <div class="arrow">
+                                            <div class="arrow__top"></div>
+                                            <div class="arrow__bottom"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination-2"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container section-title">
+                <h2>ЦЕНЫ НА УСЛУГИ</h2>
+            </div>
+            <div class="container">
+                <div class="prices">
+                    <div class="swiper-container-3">
+                        
+                        <div class="swiper-wrapper">
+                            
+
+                            <div class="swiper-slide">
+                                <div class="prices__item">
+                                    <div class="prices__block">
+                                        <div class="prices__title">Ремонтные услуги</div>
+                                        <div class="prices__value">Тестирование с выдачей технического заключения</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div class="prices__title">Цена</div>
+                                        <div class="prices__value">Бесплатно</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div>
+                                            <div class="prices__title">Срок</div>
+                                            <div class="prices__value">30-120 мин</div>
+                                        </div>
+                                        <div class="prices__buttons">
+                                            <input class="prices__button" type="submit" value="Заказать">
+                                            <div class="arrow prices__arrow">
+                                                <div class="arrow__top prices__top"></div>
+                                                <div class="arrow__bottom prices__bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prices__item">
+                                    <div class="prices__block">
+                                        <div class="prices__title">Ремонтные услуги</div>
+                                        <div class="bprices__value">Тестирование с выдачей технического заключения</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div class="prices__title">Цена</div>
+                                        <div class="prices__value">Бесплатно</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div class="prices__title">Срок</div>
+                                        <div class="prices__value">30-120 мин</div>
+                                        <div class="prices__buttons">
+                                            <input class="prices__button" type="submit" value="Заказать">
+                                            <div class="arrow prices__arrow">
+                                                <div class="arrow__top prices__top"></div>
+                                                <div class="arrow__bottom prices__bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prices__item">
+                                    <div class="prices__block">
+                                        <div class="prices__title">Ремонтные услуги</div>
+                                        <div class="prices__value">Тестирование с выдачей технического заключения</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div class="prices__title">Цена</div>
+                                        <div class="prices__value">Бесплатно</div>
+                                    </div>
+                                    <div class="block-of-price">
+                                        <div class="prices__title">Срок</div>
+                                        <div class="prices__value">30-120 мин</div>
+                                        <div class="prices__buttons">
+                                            <input class="prices__button" type="submit" value="Заказать">
+                                            <div class="arrow prices__arrow">
+                                                <div class="arrow__top prices__top"></div>
+                                                <div class="arrow__bottom prices__bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="prices__item">
+                                    <div class="prices__block">
+                                        <div class="prices__title">Ремонтные услуги</div>
+                                        <div class="prices__value">Тестирование с выдачей технического заключения</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div class="prices__title">Цена</div>
+                                        <div class="prices__value">Бесплатно</div>
+                                    </div>
+                                    <div class="prices__block">
+                                        <div class="prices__title">Срок</div>
+                                        <div class="prices__value">30-120 мин</div>
+                                        <div class="prices__buttons">
+                                            <input class="prices__button" type="submit" value="Заказать">
+                                            <div class="arrow prices__arrow">
+                                                <div class="arrow__top prices__top"></div>
+                                                <div class="arrow__bottom prices__bottom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-3"></div>
+                    </div>
+                    <div class="prices__all">
+                        <div class="prices__all-title">
+                            <div class="prices__title-row">Ремонтные услуги</div>
+                            <div class="prices__title-row">Цена</div>
+                            <div class="prices__title-row">Срок</div>
+                            <div class="prices__buttons prices__buttons_visible">
+                                <input class="prices__button" type="submit" value="Заказать">
+                                <div class="arrow prices__arrow">
+                                    <div class="arrow__top prices__top"></div>
+                                    <div class="arrow__bottom prices__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prices__all-content">
+                            <div class="prices__item-row">
+                                <div class="prices__content">Диагностика</div>
+                                <div class="prices__content">Бесплатно</div>
+                                <div class="prices__content">30мин</div>
+                                <div class="prices__buttons">
+                                    <input class="prices__button" type="submit" value="Заказать">
+                                    <div class="arrow prices__arrow">
+                                        <div class="arrow__top prices__top"></div>
+                                        <div class="arrow__bottom prices__bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__border-row"></div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__content">Замена дисплея</div>
+                                <div class="prices__content">1 000 ₽</div>
+                                <div class="prices__content">30-120 мин</div>
+                                <div class="prices__buttons">
+                                    <input class="prices__button" type="submit" value="Заказать">
+                                    <div class="arrow prices__arrow">
+                                        <div class="arrow__top prices__top"></div>
+                                        <div class="arrow__bottom prices__bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__border-row"></div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__content">Замена полифонического динамика</div>
+                                <div class="prices__content">1 000 ₽</div>
+                                <div class="prices__content">30-120 мин</div>
+                                <div class="prices__buttons">
+                                    <input class="prices__button" type="submit" value="Заказать">
+                                    <div class="arrow prices__arrow">
+                                        <div class="arrow__top prices__top"></div>
+                                        <div class="arrow__bottom prices__bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__border-row"></div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__content">Тестирование с выдачей технического заключения</div>
+                                <div class="prices__content">1 000 ₽</div>
+                                <div class="prices__content">30-120 мин</div>
+                                <div class="prices__buttons">
+                                    <input class="prices__button" type="submit" value="Заказать">
+                                    <div class="arrow prices__arrow">
+                                        <div class="arrow__top prices__top"></div>
+                                        <div class="arrow__bottom prices__bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__border-row"></div>
+                            </div>
+                            <div class="prices__item-row">
+                                <div class="prices__content">Замена программного обеспечения</div>
+                                <div class="prices__content">1 000 ₽</div>
+                                <div class="prices__content">30-120 мин</div>
+                                <div class="prices__buttons">
+                                    <input class="prices__button" type="submit" value="Заказать">
+                                    <div class="arrow prices__arrow">
+                                        <div class="arrow__top prices__top"></div>
+                                        <div class="arrow__bottom prices__bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+                        услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                    </div>
+                    <a href="#">
+                        <div class="prices__offer">
+                            <p class="prices__offer-text">Получить коммерческое предложение</p>
+                            <div class="prices__arrow">
+                                <div class="arrow prices__offer-arrow">
+                                    <div class="arrow__top"></div>
+                                    <div class="arrow__bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container footer">
+                <div class="footer__text">© 2019 CPS <br>
+                    Разработано командой Apesong
+                </div>
+                <div class="footer__text">Политика конфиденциальности</div>
+                <div class="footer__text">Информация, размещенная на данной странице, не является публичной офертой
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="connection-wrapper">
+        <div class="connection connection-wrapper__connect">
+            <div class="connection__icon_close connection__icon_close_left">
+                <a href="#">
+                    <div class="ellipse ellipse_icon_close"></div>
+                </a>
+            </div>
+            <div class="border-title connection__border-title">
+                <div class="border-for-title connection__border-for-title"></div>
+                <div class="border-title__text">Обратная связь</div>
+            </div>
+            <form action="" method="post">
+                <input class="connection__input-form" type="text" name="name" value="Имя" required> <br>
+                <input class="connection__input-form" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Телефон" required>
+                <input class="connection__input-form" type="email" name="email" value="Электронная почта" required> <br>
+                <textarea type="text" name="review" rows="5">Сообщение</textarea> <br>
+                <p class="connection__text">Нажимая “отправить”, вы даете согласие на
+                    <a href="#">обработку персональных данных</a>
+                    и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+                <div class="buttons connection__button">
+                    <input class="button" type="submit" value="Отправить">
+                    <div class="arrow connection__arrow">
+                        <div class="arrow__top connection__top"></div>
+                        <div class="arrow__bottom connection__bottom"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="connection-wrapper">
+        <div class="connection connection-wrapper__call">
+            <div class="connection__icon_close connection__icon_close_left">
+                <a href="#">
+                    <div class="ellipse ellipse_icon_close"></div>
+                </a>
+            </div>
+            <div class="border-title connection__border-title">
+                <div class="border-for-title connection__border-for-title"></div>
+                <div class="border-title__text">Обратная связь</div>
+            </div>
+            <form action="" method="post">
+                <input class="connection__input-form" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Телефон" required>
+                <p class="connection__text">Нажимая “отправить”, вы даете согласие на
+                    <a href="#">обработку персональных данных</a>
+                    и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
+                <div class="buttons connection__button">
+                    <input class="button" type="submit" value="Отправить">
+                    <div class="arrow connection__arrow">
+                        <div class="arrow__top connection__top"></div>
+                        <div class="arrow__bottom connection__bottom"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
+
