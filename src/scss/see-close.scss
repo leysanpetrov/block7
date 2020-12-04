@@ -1,4 +1,29 @@
 .see-close {
+  margin-bottom: 32px;
+
+  img {
+    width: 1em;
+    height: 1em;
+    margin-right: 16px;
+  }
+
+  &__margin {
+    margin-left: 16px;
+  }
+
+  &__img {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    //font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: #1B1C21;
+
+  }
 
   &__seeAll {
     display: none;
@@ -16,16 +41,7 @@
       }
     }
 
-  &__img {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    display: flex;
-    color: #7E7E82;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-  }
+
 
   &__close {
     display: none;
@@ -62,4 +78,13 @@
   &__close2_display_none {
     display: none;
   }
+
+  &__seeAllReed_display_none {
+    display: none;
+  }
+
+  &__closeReed_display_none {
+    display: none;
+  }
+
 }

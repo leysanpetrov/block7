@@ -3,16 +3,18 @@ let closeMenu = document.querySelector('.ellipse_icon_close');
 let menu = document.querySelector('.menu');
 let mainProjectNone = document.querySelector('.main-of-project');
 
+
 burger.addEventListener('click', function () {
-console.log('burger')
   if(window.innerWidth >= 360) {
     mainProjectNone.classList.add('main-of-project_opacity');
     menu.classList.add('menu_flex');
     menu.classList.add('menu_shadow');
+    menu.classList.add('block-animation');
   }
   else {
     mainProjectNone.classList.add('main-of-project_none');
     menu.classList.add('menu_flex');
+    menu.classList.add('block-animation');
   }
 })
 
@@ -51,7 +53,7 @@ for(let i = 0; i < chat.length; i++) {
 
 for(let i = 0; i < call.length; i++) {
   call[i].addEventListener('click', function () {
-    console.log('call')
+
     if (window.innerWidth >= 360) {
       mainProjectNone.classList.add('main-of-project_opacity');
       connectionCall.classList.add('connection-wrapper__call_block');

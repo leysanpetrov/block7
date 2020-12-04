@@ -1,15 +1,19 @@
 .menu {
   display: none;
-  height: 100%;
+  max-height: 100vh;
   overflow-y: auto;
   flex-direction: column;
   width: 320px;
   background-color: white;
+//position: relative;
+margin-left: -320px;
+
 
 
 
   @media (min-width: 321px) and (max-width: 365px) {
     width: 360px;
+    margin-left: -360px;
   }
 
   //@media (min-width: 360px) {
@@ -67,7 +71,7 @@
   }
 
   &__items {
-    min-height: calc(100vh - 300px);
+    max-height: calc(100vh - 320px);
     justify-content: space-between;
     overflow: auto;
     margin-bottom: 16px;
@@ -106,10 +110,13 @@
     width: 222px;
     padding-left: 16px;
     padding-right: 16px;
+    //position: absolute;
+    //bottom: 0px;
 
-    @media (min-width: 767px) {
-      margin-top: 241px;
-    }
+
+  //  @media (min-width: 767px) {
+  //    margin-top: 241px;
+  //  }
   }
 
   &__contacts {
@@ -146,9 +153,10 @@
 
 }
 
-
 .menu_flex {
-  display: flex;
+  display: block;
+  transition: all 2s ease;
+  transform: translateX(100%);
 }
 
 .menu_shadow {

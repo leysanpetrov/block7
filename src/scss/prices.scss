@@ -1,6 +1,9 @@
 .prices {
   &__buttons {
-    display: block;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 119px;
   }
 
   &__title {
@@ -27,6 +30,7 @@
     justify-content: space-between;
     margin: 16px;
   }
+
   &__block {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +44,7 @@
   &__button {
     background-color: #FF3E79;
     border-radius: 16px;
-    width: 136px;
+    width: 100%;
     height: 32px;
     border: none;
     color: white;
@@ -55,13 +59,18 @@
 
   &__arrow {
     position: relative;
+    left: -25px;
+  }
+
+  &__arrowFooter {
+    position: relative;
     left: -185px;
     bottom: -50px;
     @media (min-width:345px) {
       bottom: -25px;
       left: 0px;
     }
-    margin-left: 10px;
+   margin-left: 10px;
   }
 
 
@@ -76,7 +85,8 @@
   &__all-title {
     display: flex;
     justify-content: space-between;
-    margin: 16px 32px 16px 32px;
+    margin: 16px 32px 0px 32px;
+
   }
 
   &__title-row{
@@ -84,6 +94,7 @@
     line-height: 16px;
     color: #7E7E82;
     text-align: left;
+
   }
 
   &__buttons_visible {
@@ -94,13 +105,14 @@
     background-color: white;
     height: 324px;
     min-width: 720px;
-    margin: 16px;
+    padding: 8px 16px 0px 16px;
+    margin: 0px 16px 0px 16px;
   }
 
   &__item-row {
     justify-content: space-between;
     display: flex;
-    margin: 8px 16px 8px 16px;
+    margin: 16px 0px 16px 0px;
   }
 
   &__content {
@@ -118,7 +130,7 @@
     background: #EAEAEA;
     width: 100%;
     height: 1px;
-    margin: 5px 16px 5px 16px;
+
   }
 
   &__item-rown:first-child {

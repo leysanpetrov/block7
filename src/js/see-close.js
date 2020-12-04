@@ -70,3 +70,43 @@ close2.addEventListener('click', function () {
 })
 
 
+// Читать
+
+
+let closeReed = document.querySelector('.see-close__closeReed');
+let closeNoneReed = document.querySelector('.see-close__closeReed_display_none');
+// let seeAllNoneReed = document.querySelector('.see-close__seeAllReed_display_none');
+// let hiddenEquipment = document.querySelectorAll('.equipments__item_display_none');
+// let computerEquipment = document.querySelectorAll('.equipments__item');
+
+
+let seeAllReed = document.querySelector('.see-close__seeAllReed');
+
+
+seeAllReed.addEventListener('click', function () {
+  // for(let i = 0; i < hiddenEquipment.length; i++) {
+  //   hiddenEquipment[i].classList.remove('equipments__item_display_none');
+  // }
+  closeNoneReed.classList.remove('see-close__closeReed_display_none');
+  seeAllReed.classList.add('see-close__seeAllReed_display_none');
+})
+
+closeReed.addEventListener('click', function () {
+  // if(window.innerWidth >= 1120) {
+  //   for (let i = 4; i < computerEquipment.length; i++) {
+  //     computerEquipment[i].classList.add('equipments__item_display_none');
+  //   }
+  // }
+  // else {
+  //   for (let i = 3; i < computerEquipment.length; i++) {
+  //     computerEquipment[i].classList.add('equipments__item_display_none');
+  //   }
+  // }
+  closeReed.classList.add('see-close__closeReed_display_none');
+  seeAllReed.classList.remove('see-close__seeAllReed_display_none');
+})
+
+
+
+
+

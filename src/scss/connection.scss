@@ -38,7 +38,6 @@
     margin: 8px 16px;
     border: 1px solid #EAEAEA;
     border-radius: 8px;
-    color: #B5B6BC;
     font-size: 16px;
     line-height: 24px;
     padding-left: 16px;
@@ -91,3 +90,11 @@
 }
 
 
+
+input::placeholder {
+  color: #B5B6BC;
+}
+
+textarea::placeholder {
+  color: #B5B6BC;
+}

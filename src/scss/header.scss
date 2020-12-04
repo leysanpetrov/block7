@@ -2,16 +2,8 @@
 @import "mixins";
 
 .header {
-  //padding-bottom: 19px;
-  //padding-top: 19px;
   background-color: white;
 
-  //&__container {
-  //  min-width: 280px;
-  //  margin: 0 auto;
-  //  padding-left: 16px;
-  //  padding-right: 16px;
-  //}
   &__container-row {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +22,7 @@
   &__block-left {
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: center;
 
     @media (min-width:767px) {
@@ -41,7 +33,13 @@
   &__block-right {
     display: flex;
     width: 50%;
-    justify-content: space-between;
+
+    justify-content: flex-end;
+
+  }
+
+  &__ellipse {
+    margin-right: 26px;
   }
 
   @media (min-width:1440px) {
