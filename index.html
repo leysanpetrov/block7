@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
@@ -18,7 +18,7 @@
                 <nav class="menu__nav">
                     <div class="menu__block-left">
                         <a href="#" class="menu__ellipse menu__ellipse_display_none">
-                            <div class="ellipse ellipse_icon_close"></div>
+                            <button class="ellipse ellipse_icon_close"></button>
                         </a>
                         <div class="logo menu__logo">
                             <a href="#"><img src="img/Group.svg"></a>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="menu__block-right">
                         <a href="#">
-                            <div class="ellipse ellipse_icon_search menu__ellipse menu__ellipse_icon_search"></div>
+                            <button class="ellipse ellipse_icon_search menu__ellipse menu__ellipse_icon_search"></button>
                         </a>
                     </div>
                 </nav>
@@ -61,13 +61,13 @@
                 <div class="menu__contact-block">
                     <div class="menu__contacts">
                         <a href="#">
-                            <div class="ellipse ellipse_icon_tel"></div>
+                            <button class="ellipse ellipse_icon_tel"></button>
                         </a>
                         <a href="#">
-                            <div class="ellipse ellipse_icon_chat"></div>
+                            <button class="ellipse ellipse_icon_chat"></button>
                         </a>
                         <a href="#">
-                            <div class="ellipse ellipse_icon_profile"></div>
+                            <button class="ellipse ellipse_icon_profile"></button>
                         </a>
                     </div>
                     <a href="#">
@@ -98,7 +98,7 @@
                     <nav class="header__row">
                         <div class="header__block-left">
                             <a href="#">
-                                <div class="ellipse ellipse_icon_burger"></div>
+                                <button class="ellipse ellipse_icon_burger"></button>
                             </a>
                             <div class="border border__left"></div>
                             <div class="logo logo__row">
@@ -107,20 +107,20 @@
                         </div>
                         <div class="header__block-right">
                             <a href="#">
-                                <div class="ellipse ellipse_icon_tel ellipse_display_none"></div>
+                                <button class="ellipse ellipse_icon_tel ellipse_display_none header__ellipse"></button>
                             </a>
                             <a href="#">
-                                <div class="ellipse ellipse_icon_chat ellipse_display_none"></div>
+                                <button class="ellipse ellipse_icon_chat ellipse_display_none header__ellipse"></button>
                             </a>
                             <a href="#">
-                                <div class="ellipse ellipse_icon_profile ellipse_display_none"></div>
+                                <button class="ellipse ellipse_icon_profile ellipse_display_none header__ellipse"></button>
                             </a>
-                            <div class="border border__right"></div>
+                            <div class="border border__right header__ellipse"></div>
                             <a href="#">
-                                <div class="ellipse ellipse_icon_repair"></div>
+                                <button class="ellipse ellipse_icon_repair header__ellipse"></button>
                             </a>
                             <a href="#">
-                                <div class="ellipse ellipse_icon_search"></div>
+                                <button class="ellipse ellipse_icon_search header__ellipse"></button>
                             </a>
                         </div>
                     </nav>
@@ -140,7 +140,7 @@
                             <p>Оставить заявку</p>
                             <div>
                                 <a href="#">
-                                    <div class="ellipse ellipse_icon_repair"></div>
+                                    <button class="ellipse ellipse_icon_repair"></button>
                                 </a>
                             </div>
                         </div>
@@ -148,19 +148,29 @@
                             <p>Статус ремонта</p>
                             <div>
                                 <a href="#">
-                                    <div class="ellipse ellipse_icon_search"></div>
+                                    <button class="ellipse ellipse_icon_search"></button>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="main__row-services">
-                    <div class="main__service">Ремонтируемые бренды</div>
-                    <div class="main__service">Ремонтируемые устройства</div>
-                    <div class="main__service">Цены на услуги</div>
-                    <div class="main__service">Адреса сервисных центров</div>
-                    <div class="main__service">Специальные цены</div>
-                </div>
+                <ul class="main__row-services">
+                    <a href="#">
+                    <li class="main__service main__service_active">Ремонтируемые бренды</li>
+                    </a>
+                        <a href="#">
+                    <li class="main__service">Ремонтируемые устройства</li>
+                        </a>
+                            <a href="#">
+                    <li class="main__service">Цены на услуги</li>
+                            </a>
+                                <a href="#">
+                    <li class="main__service">Адреса сервисных центров</li>
+                                </a>
+                                    <a href="#">
+                    <li class="main__service">Специальные цены</li>
+                                    </a>
+                </ul>
                 <section class="main__about">
                     <div class="main__text">
                         <p class="main__text1">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
@@ -179,10 +189,20 @@
                             большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
                             рекомендациям
                             и, в свою очередь, советуют нас родным и близким.</p>
-                        <div class="uncover">
-                            <button href="#" class="uncover__img"><img src="img/chevron-double-down.svg"></button>
-                            <h3 class="uncover__title">Читать далее</h3>
+                        <div class="see-close">
+                            <div class="see-close__seeAllReed">
+                                <button class="see-close__img"><img src="img/icons8.png">Читать далее</button>
+
+                            </div>
+                            <div class="see-close__closeReed see-close__closeReed_display_none">
+                                <button class="see-close__img"><img class="see-close__img_up" src="img/icons8.png">Свернуть</button>
+
+                            </div>
                         </div>
+
+
+
+
                     </div>
                     <div class="main__img"><img src="img/MG_3223.png"></div>
                 </section>
@@ -497,14 +517,12 @@
                     
                     
                 </div>
-                <div class="see-close">
+                <div class="see-close see-close__margin">
                     <div class="see-close__seeAll">
-                        <button href="#" class="see-close__img"><img src="img/chevron-double-down.svg"></button>
-                        <h3 class="see-close__text">Показать все</h3>
+                        <button class="see-close__img"><img src="img/icons8.png">Показать все</button>
                     </div>
                     <div class="see-close__close see-close__close_display_none">
-                        <button href="#" class="see-close__img see-close__img_up"><img src="img/chevron-double-down.svg"></button>
-                        <h3 class="see-close__text">Свернуть</h3>
+                        <button class="see-close__img"><img class="see-close__img_up" src="img/icons8.png">Свернуть</button>
                     </div>
                 </div>
             </div>
@@ -604,14 +622,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="see-close">
+                <div class="see-close see-close__margin">
                     <div class="see-close__seeAll2">
-                        <button href="#" class="see-close__img"><img src="img/chevron-double-down.svg"></button>
-                        <h3 class="see-close__text">Показать все</h3>
+                        <button class="see-close__img"><img src="img/icons8.png">Показать всe</button>
                     </div>
                     <div class="see-close__close2 see-close__close2_display_none">
-                        <button href="#" class="see-close__img see-close__img_up"><img src="img/chevron-double-down.svg"></button>
-                        <h3 class="see-close__text">Свернуть</h3>
+                        <button class="see-close__img"><img class="see-close__img_up" src="img/icons8.png">Свернут</button>
                     </div>
                 </div>
                 <div class="swiper-container-2">
@@ -929,7 +945,7 @@
                     <a href="#">
                         <div class="prices__offer">
                             <p class="prices__offer-text">Получить коммерческое предложение</p>
-                            <div class="prices__arrow">
+                            <div class="prices__arrowFooter">
                                 <div class="arrow prices__offer-arrow">
                                     <div class="arrow__top"></div>
                                     <div class="arrow__bottom"></div>
@@ -955,7 +971,7 @@
         <div class="connection connection-wrapper__connect">
             <div class="connection__icon_close connection__icon_close_left">
                 <a href="#">
-                    <div class="ellipse ellipse_icon_close"></div>
+                    <button class="ellipse ellipse_icon_close"></button>
                 </a>
             </div>
             <div class="border-title connection__border-title">
@@ -963,10 +979,10 @@
                 <div class="border-title__text">Обратная связь</div>
             </div>
             <form action="" method="post">
-                <input class="connection__input-form" type="text" name="name" value="Имя" required> <br>
-                <input class="connection__input-form" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Телефон" required>
-                <input class="connection__input-form" type="email" name="email" value="Электронная почта" required> <br>
-                <textarea type="text" name="review" rows="5">Сообщение</textarea> <br>
+                <input class="connection__input-form" type="text" name="name" placeholder="Имя" aria-label="Имя" required> <br>
+                <input class="connection__input-form" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон" aria-label="Телефон" required>
+                <input class="connection__input-form" type="email" name="email" placeholder="Электронная почта" aria-label="email" required> <br>
+                <textarea type="text" name="review" rows="5" placeholder="Сообщение" aria-label="Сообщение"></textarea> <br>
                 <p class="connection__text">Нажимая “отправить”, вы даете согласие на
                     <a href="#">обработку персональных данных</a>
                     и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
@@ -984,7 +1000,7 @@
         <div class="connection connection-wrapper__call">
             <div class="connection__icon_close connection__icon_close_left">
                 <a href="#">
-                    <div class="ellipse ellipse_icon_close"></div>
+                    <button class="ellipse ellipse_icon_close"></button>
                 </a>
             </div>
             <div class="border-title connection__border-title">
@@ -992,12 +1008,12 @@
                 <div class="border-title__text">Обратная связь</div>
             </div>
             <form action="" method="post">
-                <input class="connection__input-form" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Телефон" required>
+                <input class="connection__input-form" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Телефон" aria-label="Телефон" required>
                 <p class="connection__text">Нажимая “отправить”, вы даете согласие на
                     <a href="#">обработку персональных данных</a>
                     и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></p>
                 <div class="buttons connection__button">
-                    <input class="button" type="submit" value="Отправить">
+                    <input class="button" type="submit" value="Отправить" aria-label="Отправить">
                     <div class="arrow connection__arrow">
                         <div class="arrow__top connection__top"></div>
                         <div class="arrow__bottom connection__bottom"></div>
