@@ -46,6 +46,11 @@
     padding: 8px 16px;
   }
 
+  &__service:hover {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+  }
+
   &__service_active  {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
@@ -94,11 +99,27 @@
     }
   }
 
+  &__text2_block {
+    display: block;
+  }
+
   &__text3 {
     display: none;
     @media (min-width: 1440px) {
       display: block;
     }
+  }
+
+  &__text3_block {
+    display: block;
+  }
+
+  &__text4 {
+    display: none;
+  }
+
+  &__text4_block {
+    display: block;
   }
 
   &__text1 {

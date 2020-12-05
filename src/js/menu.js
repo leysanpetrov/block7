@@ -9,17 +9,15 @@ burger.addEventListener('click', function () {
     mainProjectNone.classList.add('main-of-project_opacity');
     menu.classList.add('menu_flex');
     menu.classList.add('menu_shadow');
-    menu.classList.add('block-animation');
   }
   else {
     mainProjectNone.classList.add('main-of-project_none');
     menu.classList.add('menu_flex');
-    menu.classList.add('block-animation');
   }
 })
 
-closeMenu.addEventListener('click', function () {
 
+closeMenu.addEventListener('click', function () {
   mainProjectNone.classList.remove('main-of-project_opacity');
   mainProjectNone.classList.remove('main-of-project_none');
   menu.classList.remove('menu_flex');
@@ -84,7 +82,25 @@ for(let i = 0; i < call.length; i++) {
   }
 
 
-
+mainProjectNone.addEventListener('click', e=> {
+  let target = e.target;
+  for(let i = 0; i < chat.length; i++) {
+    if (target === chat[i] || target === connectionConnect) return;
+  }
+  for(let i = 0; i < call.length; i++) {
+    if (target === call[i] || target === connectionConnect) return;
+  }
+  if (target === burger || target === menu) return;
+  mainProjectNone.classList.remove('main-of-project_opacity');
+  mainProjectNone.classList.remove('main-of-project_none');
+  menu.classList.remove('menu_flex');
+  menu.classList.remove('menu_shadow');
+  menu.classList.remove('menu_opacity');
+  connectionConnect.classList.remove('connection-wrapper__connect_block');
+  connectionConnect.classList.remove('connection-wrapper__connect_shadow');
+  connectionCall.classList.remove('connection-wrapper__call_block');
+  connectionCall.classList.remove('connection-wrapper__call_shadow');
+})
 
 
 

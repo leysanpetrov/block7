@@ -9,8 +9,9 @@
   @media (min-width: 767px) {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
     }
-
 
   &__logo {
     display: flex;
@@ -19,10 +20,9 @@
     min-width: 240px;
     align-items: center;
     justify-content: space-between;
-    margin: 16px;
+    margin: 16px 24px 16px 0;
 
     @media (min-width:767px) {
-        margin: 16px;
         min-width: 224px;
       }
   }
@@ -49,15 +49,9 @@
   }
 }
 
-
-.swiper-container {
-  width: 240px;
-  height: 130px;
-
-  //@media (min-width: 1120px) {
-  //  display: none;
-  //}
-  @media (min-width: 767px) {
-      display: none;
-    }
+.brands:first-child {
+  margin-left: 16px;
 }
+
+
+

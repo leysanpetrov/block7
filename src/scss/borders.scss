@@ -8,11 +8,24 @@
   }
 }
 
+.border {
+  background: #EAEAEA;
+  border-radius: 1px;
+  width: 2px;
+  height: 32px;
 
-.border-for-title {
-  background: #41F6D7;
-  border-radius: 0 10px 10px 0;
-  width: 4px;
-  height: 40px;
-  margin-right: 12px;
+  &__right {
+    margin-right: 20px;
+    margin-left: 4px;
+  }
+  &__left {
+    display: none;
+
+    @media (min-width:767px) {
+      display: block;
+      margin-right: 20px;
+      margin-left: 4px;
+    }
+  }
 }
+

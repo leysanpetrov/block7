@@ -1,28 +1,21 @@
 .menu {
-  display: none;
+  position: absolute;
   max-height: 100vh;
   overflow-y: auto;
   flex-direction: column;
   width: 320px;
   background-color: white;
-//position: relative;
-margin-left: -320px;
-
-
+  transform: translate(-100%, 0px);
 
 
   @media (min-width: 321px) and (max-width: 365px) {
     width: 360px;
-    margin-left: -360px;
+    //margin-left: -360px;
   }
-
-  //@media (min-width: 360px) {
-  //  position: absolute;
-  //}
-
 
   @media (min-width: 1440px) {
       display: flex;
+    margin-left: 0px;
     }
 
   &__logo {
@@ -33,20 +26,14 @@ margin-left: -320px;
 
   &__block-left {
     display: flex;
-    width: 50%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-start;
   }
 
   &__block-right {
     display: flex;
-    width: 50%;
     justify-content: flex-end;
   }
-
-  //&__ellipse_icon_search {
-  //  justify-content: flex-end;
-  //}
 
     &__header {
     background-color: white;
@@ -55,7 +42,6 @@ margin-left: -320px;
       @media (min-width: 767px) {
         padding: 19px 24px;
       }
-
   }
 
   &__nav {
@@ -110,13 +96,6 @@ margin-left: -320px;
     width: 222px;
     padding-left: 16px;
     padding-right: 16px;
-    //position: absolute;
-    //bottom: 0px;
-
-
-  //  @media (min-width: 767px) {
-  //    margin-top: 241px;
-  //  }
   }
 
   &__contacts {
@@ -132,7 +111,6 @@ margin-left: -320px;
 
   &__phone {
     font-size: 24px;
-    /*font-weight: 900;*/
     text-shadow: 2px 0;
     letter-spacing: -0.6px;
   }
@@ -150,13 +128,11 @@ margin-left: -320px;
   &__language_ru_active {
     color: #7E7E82;
   }
-
 }
 
 .menu_flex {
-  display: block;
   transition: all 2s ease;
-  transform: translateX(100%);
+  transform: translate(0%, 0px);
 }
 
 .menu_shadow {

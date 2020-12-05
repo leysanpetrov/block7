@@ -50,6 +50,7 @@
     color: white;
     font-size: 12px;
     line-height: 24px;
+    cursor: pointer;
   }
 
   &__top,
@@ -116,8 +117,6 @@
   }
 
   &__content {
-    /*margin-left: 16px;*/
-    /*margin-top: 16px;*/
     margin: auto 0;
     text-align: left;
     font-size: 14px;
@@ -179,19 +178,5 @@
 
 }
 
-.swiper-pagination-3 {
-  /*position: absolute;*/
-  text-align: center;
-  /*transition: 300ms opacity;*/
 
-  /*z-index: 10;*/
-
-}
-
-
-  .swiper-container-3 {
-    @media (min-width: 767px) {
-      display: none;
-    }
-  }
 

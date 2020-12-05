@@ -22,82 +22,6 @@ body {
   font-style: normal;
 }
 
-.cps {
-  display: flex;
-  @media (min-width: 360px) {
-    position: relative;
-  }
-}
-
-
-.main-of-project {
-  display: flex;
-  min-height: 100%;
-  overflow: hidden;
-  flex-direction: column;
-}
-
-.main-of-project_none {
-  display: none;
-}
-
-.main-of-project_opacity {
-  opacity: 4%;
-}
-
-
-.menu-wrapper {
-  @media (min-width: 360px) and (max-width: 1440px) {
-    position: static;
-    z-index: 2;
-  }
-}
-
-.connection-wrapper {
-  @media (min-width: 360px) {
-    //position: absolute;
-    z-index: 3;
-    justify-content: flex-end;
-  }
-
-  &__connect {
-    display: none;
-  }
-
-  &__call {
-    display: none;
-  }
-
-  &__call_block {
-    display: block;
-  }
-
-  &__connect_block {
-    display: block;
-  }
-}
-
-
-.container {
-  min-width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: 767px) {
-    min-width: 767px;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  @media (min-width: 1120px) {
-    min-width: 1120px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-
-
-
 a {
   color: #1B1C21;
   text-decoration: none;
@@ -107,7 +31,6 @@ a :hover {
   opacity: 0.7;
   transition-duration: 0.5s;
 }
-
 
 textarea {
   min-width: 272px;
@@ -123,6 +46,9 @@ textarea {
   }
 }
 
+textarea::placeholder {
+  color: #B5B6BC;
+}
 
 li {
   list-style-type: none;
@@ -132,18 +58,11 @@ ul {
   padding-left: 0;
 }
 
-
-button {
-  border: none;
-  outline: none;
+input::placeholder {
+  color: #B5B6BC;
 }
 
-button :hover {
-  opacity: 0.7;
-  transition-duration: 0.5s;
-}
 
-//.block-animation {
-//  transition: display 3s ease 0s;
-//  transform: translateX(100%);
-//}
+
+
+

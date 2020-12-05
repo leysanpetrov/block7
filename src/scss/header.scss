@@ -39,7 +39,7 @@
   }
 
   &__ellipse {
-    margin-right: 26px;
+    margin-right: 16px;
   }
 
   @media (min-width:1440px) {
@@ -48,70 +48,5 @@
 }
 
 
-.ellipse_display_none {
-  display: none;
 
-  @media (min-width:767px) {
-      display: block;
-  }
-}
-
-
-.border {
-  background: #EAEAEA;
-  border-radius: 1px;
-  width: 2px;
-  height: 32px;
-}
-
-.border__left {
-  margin: 0 10px;
-  visibility: hidden;
-
-  @media (min-width:767px) {
-      display: block;
-      margin: 0 20px;
-  }
-}
-
-.logo__row {
-  margin-right: auto;
-  margin-left: 16px;
-  align-items: center;
-}
-
- .ellipse {
-  background: #FF3E79 no-repeat center;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-}
-
- .ellipse_icon_burger {
-  background-image: url("../img/burger/burger.png");
-}
-
- .ellipse_icon_tel {
-  background-image: url("../img/tel/tel.png");
-}
-
- .ellipse_icon_chat {
-  background-image: url("../img/chat/chat.png");
-}
-
- .ellipse_icon_profile {
-  background-image: url("../img/profile/profile.png");
-}
-
-.ellipse_icon_repair {
-  background-image: url("../img/repair/repair.png");
-}
-
-.ellipse_icon_search {
-  background-image: url("../img/search/search.png");
-}
-
-.ellipse_icon_close {
-  background-image: url("../img/close/close.png");
-}
 

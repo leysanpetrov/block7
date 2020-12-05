@@ -75,33 +75,40 @@ close2.addEventListener('click', function () {
 
 let closeReed = document.querySelector('.see-close__closeReed');
 let closeNoneReed = document.querySelector('.see-close__closeReed_display_none');
-// let seeAllNoneReed = document.querySelector('.see-close__seeAllReed_display_none');
-// let hiddenEquipment = document.querySelectorAll('.equipments__item_display_none');
-// let computerEquipment = document.querySelectorAll('.equipments__item');
-
-
 let seeAllReed = document.querySelector('.see-close__seeAllReed');
-
+let text2 = document.querySelector('.main__text2');
+let text3 = document.querySelector('.main__text3');
+let text4 = document.querySelector('.main__text4');
 
 seeAllReed.addEventListener('click', function () {
-  // for(let i = 0; i < hiddenEquipment.length; i++) {
-  //   hiddenEquipment[i].classList.remove('equipments__item_display_none');
-  // }
   closeNoneReed.classList.remove('see-close__closeReed_display_none');
   seeAllReed.classList.add('see-close__seeAllReed_display_none');
+
+  if(window.innerWidth >= 768) {
+    text3.classList.add('main__text3_block');
+  }
+  if(window.innerWidth >= 1120) {
+    text4.classList.add('main__text4_block');
+  }
+  else {
+    text2.classList.add('main__text2_block');
+    text3.classList.add('main__text3_block');
+  }
 })
 
 closeReed.addEventListener('click', function () {
-  // if(window.innerWidth >= 1120) {
-  //   for (let i = 4; i < computerEquipment.length; i++) {
-  //     computerEquipment[i].classList.add('equipments__item_display_none');
-  //   }
-  // }
-  // else {
-  //   for (let i = 3; i < computerEquipment.length; i++) {
-  //     computerEquipment[i].classList.add('equipments__item_display_none');
-  //   }
-  // }
+
+  if(window.innerWidth >= 768) {
+    text3.classList.remove('main__text3_block');
+  }
+  if(window.innerWidth >= 1120) {
+    text4.classList.remove('main__text4_block');
+  }
+  else {
+    text2.classList.remove('main__text2_block');
+    text3.classList.remove('main__text3_block');
+    text4.classList.remove('main__text4_block');
+  }
   closeReed.classList.add('see-close__closeReed_display_none');
   seeAllReed.classList.remove('see-close__seeAllReed_display_none');
 })

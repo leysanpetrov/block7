@@ -1,0 +1,39 @@
+
+.swiper-container {
+  width: 240px;
+  height: 130px;
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-2 {
+  /*position: absolute;*/
+  text-align: center;
+  /*transition: 300ms opacity;*/
+
+  /*z-index: 10;*/
+}
+
+.swiper-container-2 {
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-3 {
+  /*position: absolute;*/
+  text-align: center;
+  /*transition: 300ms opacity;*/
+
+  /*z-index: 10;*/
+
+}
+
+
+.swiper-container-3 {
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
