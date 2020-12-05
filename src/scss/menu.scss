@@ -1,5 +1,7 @@
 .menu {
+  overflow: hidden;
   position: absolute;
+  visibility: hidden;
   max-height: 100vh;
   overflow-y: auto;
   flex-direction: column;
@@ -131,7 +133,8 @@
 }
 
 .menu_flex {
-  transition: all 2s ease;
+  visibility: visible;
+  transition: all 0.5s ease;
   transform: translate(0%, 0px);
 }
 
