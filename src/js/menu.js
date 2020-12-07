@@ -39,11 +39,15 @@ for(let i = 0; i < chat.length; i++) {
       connectionConnect.classList.add('connection-wrapper__connect_block');
       connectionConnect.classList.add('connection_shadow');
       menu.classList.add('menu_opacity');
+      menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_shadow');
 
     } else {
       mainProjectNone.classList.add('main-of-project_none');
       connectionConnect.classList.add('connection-wrapper__connect_block');
       menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_shadow');
     }
   })
 }
@@ -57,12 +61,16 @@ for(let i = 0; i < call.length; i++) {
       connectionCall.classList.add('connection-wrapper__call_block');
       connectionCall.classList.add('connection_shadow');
       menu.classList.add('menu_opacity');
+      menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_shadow');
 
 
     } else {
       mainProjectNone.classList.add('main-of-project_none');
       connectionCall.classList.add('connection-wrapper__call_block');
       menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_flex');
+      menu.classList.remove('menu_shadow');
     }
   })
 }
