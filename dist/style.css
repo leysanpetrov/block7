@@ -45,7 +45,7 @@
         display: flex; } }
   .main__icons-item {
     display: flex;
-    margin-left: 5%;
+    margin-right: 5%;
     justify-content: space-between;
     align-items: center; }
   .main__row-services {
@@ -460,8 +460,11 @@
       width: 360px; } }
   @media (min-width: 1440px) {
     .menu {
+      width: 320px;
       display: flex;
-      margin-left: 0px; } }
+      position: relative;
+      visibility: visible;
+      transform: translate(0px, 0px); } }
   .menu__logo {
     margin-right: auto;
     margin-left: 16px;
@@ -825,6 +828,7 @@ input::placeholder {
       position: relative; } }
 
 .main-of-project {
+  max-width: 1120px;
   display: flex;
   min-height: 100%;
   overflow: hidden;
@@ -852,6 +856,16 @@ input::placeholder {
   transform: translate(0%, 0px); }
 
 .connection-wrapper__connect_block {
+  visibility: visible;
+  transition: all 0.5s ease;
+  transform: translate(0%, 0px); }
+
+.connection-wrapper__request_block {
+  visibility: visible;
+  transition: all 0.5s ease;
+  transform: translate(0%, 0px); }
+
+.connection-wrapper__repair_block {
   visibility: visible;
   transition: all 0.5s ease;
   transform: translate(0%, 0px); }
