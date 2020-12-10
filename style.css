@@ -828,11 +828,13 @@ input::placeholder {
       position: relative; } }
 
 .main-of-project {
-  max-width: 1120px;
   display: flex;
   min-height: 100%;
   overflow: hidden;
   flex-direction: column; }
+  @media (min-width: 1440px) {
+    .main-of-project {
+      max-width: 1120px; } }
 
 .main-of-project_none {
   display: none; }
