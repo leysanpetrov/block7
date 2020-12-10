@@ -16,8 +16,11 @@
   }
 
   @media (min-width: 1440px) {
-      display: flex;
-    margin-left: 0px;
+    width: 320px;
+    display: flex;
+    position: relative;
+    visibility: visible;
+    transform: translate(0px, 0px);
     }
 
   &__logo {

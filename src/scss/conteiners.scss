@@ -16,6 +16,7 @@
 }
 
 .main-of-project {
+  max-width: 1120px;
   display: flex;
   min-height: 100%;
   overflow: hidden;
@@ -32,6 +33,7 @@
 
 
 .menu-wrapper {
+
   @media (min-width: 360px) and (max-width: 1440px) {
     position: static;
     z-index: 2;
@@ -52,6 +54,17 @@
   }
 
   &__connect_block {
+    visibility: visible;
+    transition: all 0.5s ease;
+    transform: translate(0%, 0px);
+  }
+
+  &__request_block {
+    visibility: visible;
+    transition: all 0.5s ease;
+    transform: translate(0%, 0px);
+  }
+  &__repair_block {
     visibility: visible;
     transition: all 0.5s ease;
     transform: translate(0%, 0px);

@@ -357,9 +357,8 @@
 
 .prices__arrowFooter {
   position: relative;
-  left: -185px;
-  bottom: -50px;
-  margin-left: 10px; }
+  left: -175px;
+  bottom: -50px; }
   @media (min-width: 345px) {
     .prices__arrowFooter {
       bottom: -25px;
